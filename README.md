@@ -1,4 +1,4 @@
-# Macro-Friendly Recipe Collection
+# Nich's Meal Prep Recipes
 
 A GitHub Pages site for hosting macro-friendly recipes. Each recipe is designed to deliver 500-600 calories with at least 40 grams of protein per serving.
 
