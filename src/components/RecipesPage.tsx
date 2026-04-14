@@ -20,10 +20,32 @@ export function RecipesPage() {
   const [selectedRecipe, setSelectedRecipe] = useState<Recipe | null>(null)
   const [detailOpen, setDetailOpen] = useState(false)
 
+  // Open a recipe from the URL hash on initial load and hash changes
   useEffect(() => {
+    function openFromHash(loadedRecipes: Recipe[]) {
+      const hash = window.location.hash
+      const match = hash.match(/^#recipe\/(.+)$/)
+      if (match) {
+        const slug = decodeURIComponent(match[1])
+        const recipe = loadedRecipes.find(r => r.slug === slug)
+        if (recipe) {
+          setSelectedRecipe(recipe)
+          setDetailOpen(true)
+          return
+        }
+      }
+      setSelectedRecipe(null)
+      setDetailOpen(false)
+    }
+
     loadRecipes().then(loadedRecipes => {
       setRecipes(loadedRecipes)
       setLoading(false)
+      openFromHash(loadedRecipes)
+
+      const onHashChange = () => openFromHash(loadedRecipes)
+      window.addEventListener('hashchange', onHashChange)
+      return () => window.removeEventListener('hashchange', onHashChange)
     })
   }, [])
 
@@ -44,8 +66,15 @@ export function RecipesPage() {
   }
 
   const handleRecipeClick = (recipe: Recipe) => {
-    setSelectedRecipe(recipe)
-    setDetailOpen(true)
+    window.location.hash = `recipe/${encodeURIComponent(recipe.slug)}`
+  }
+
+  const handleDetailOpenChange = (open: boolean) => {
+    if (!open) {
+      history.pushState(null, '', window.location.pathname + window.location.search)
+      setSelectedRecipe(null)
+    }
+    setDetailOpen(open)
   }
 
   const uniquePortions = Array.from(new Set(recipes.map(r => r.portions))).sort((a, b) => a - b)
@@ -186,7 +215,7 @@ export function RecipesPage() {
       <RecipeDetail 
         recipe={selectedRecipe}
         open={detailOpen}
-        onOpenChange={setDetailOpen}
+        onOpenChange={handleDetailOpenChange}
       />
     </div>
   )
