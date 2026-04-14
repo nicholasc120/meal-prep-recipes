@@ -1,6 +1,12 @@
 import { marked } from 'marked'
 import type { Recipe, RecipeFrontmatter, RecipeCategory, RecipeDifficulty } from './types'
 
+const recipeModules = import.meta.glob<string>('/src/recipes/*.md', {
+  query: '?raw',
+  import: 'default',
+  eager: true,
+})
+
 function parseFrontmatter(content: string): { frontmatter: Partial<RecipeFrontmatter>, body: string } {
   const frontmatterRegex = /^---\n([\s\S]*?)\n---\n([\s\S]*)$/
   const match = content.match(frontmatterRegex)
@@ -51,30 +57,16 @@ export async function parseRecipe(slug: string, rawContent: string): Promise<Rec
 }
 
 export async function loadRecipes(): Promise<Recipe[]> {
-  const recipeFiles = [
-    'honey-garlic-chicken.md',
-    'korean-beef-bowl.md',
-    'chimichurri-steak.md',
-    'sheet-pan-chicken.md',
-    'teriyaki-salmon.md',
-    'taco-stuffed-peppers.md',
-    'turkey-lettuce-wraps.md'
-  ]
-
   const recipes: Recipe[] = []
-  const baseUrl = import.meta.env.BASE_URL
 
-  for (const filename of recipeFiles) {
+  for (const [path, rawContent] of Object.entries(recipeModules)) {
     try {
-      const response = await fetch(`${baseUrl}recipes/${filename}`)
-      if (response.ok) {
-        const content = await response.text()
-        const slug = filename.replace('.md', '')
-        const recipe = await parseRecipe(slug, content)
-        recipes.push(recipe)
-      }
+      const filename = path.split('/').pop() || ''
+      const slug = filename.replace('.md', '')
+      const recipe = await parseRecipe(slug, rawContent)
+      recipes.push(recipe)
     } catch (error) {
-      console.error(`Failed to load recipe: ${filename}`, error)
+      console.error(`Failed to parse recipe: ${path}`, error)
     }
   }
 
