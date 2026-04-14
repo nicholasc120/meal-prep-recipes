@@ -37,3 +37,11 @@
 ## Eggs
 - **Macros**: 40 Cal, 7gP per egg
 - **Notes**: it's an egg.
+
+## Cheese
+- **Macros**: 120 Cal, 7gP per 30g
+- **Notes**: All cheese has the same macros, except for Parmesan which is weirdly high in protein
+
+## Parmesan Cheese
+- **Macros**: 130 Cal, 12gP per 30g
+- **Notes**: You can substitute Grana Padano and Parmeggiano Reggiano interchangeably. I don't know the difference
