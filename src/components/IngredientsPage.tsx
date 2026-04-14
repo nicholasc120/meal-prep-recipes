@@ -46,7 +46,7 @@ export function IngredientsPage() {
       <div>
         <h2 className="text-2xl md:text-3xl font-bold mb-2">Common Ingredients</h2>
         <p className="text-muted-foreground">
-          Where I source the ingredients used across these recipes.
+          Notes on where I get ingredients used in recipes.
         </p>
       </div>
 
