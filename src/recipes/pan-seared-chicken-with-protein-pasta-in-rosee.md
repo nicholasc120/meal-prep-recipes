@@ -1,5 +1,5 @@
 ---
-title: Red Lentil Ground Bison Pasta
+title: Pan Seared Chicken with Protein Pasta in Rosee Sauce
 category: Chicken
 rating: 5
 difficulty: Medium
