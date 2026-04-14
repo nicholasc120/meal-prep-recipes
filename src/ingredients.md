@@ -45,3 +45,7 @@
 ## Parmesan Cheese
 - **Macros**: 130 Cal, 12gP per 30g
 - **Notes**: You can substitute Grana Padano and Parmeggiano Reggiano interchangeably. I don't know the difference
+
+## Japanese Curry
+- **Macros**: 540 Cal, 6gP per 1/2 of the entire box (4 roux cubes)
+- **Notes**: All of the premade rouxs have identical macros but I go with Golden or Royal Curry from T&T. Glico is widely available but I find it to be a little paste-y
