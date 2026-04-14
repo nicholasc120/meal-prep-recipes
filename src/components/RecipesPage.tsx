@@ -1,125 +1,193 @@
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog'
-import { Sheet, SheetContent, SheetHeader, SheetTitle } from '@/components/ui/sheet'
-import { ScrollArea } from '@/components/ui/scroll-area'
-import { Badge } from '@/components/ui/badge'
-import { useIsMobile } from '@/hooks/use-mobile'
-import { Star, ChartBar, Users, Clock } from '@phosphor-icons/react'
-import type { Recipe } from '@/lib/types'
-import { cn } from '@/lib/utils'
+import { useState, useEffect } from 'react'
+import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
+import { Button } from '@/components/ui/button'
+import { Separator } from '@/components/ui/separator'
+import { RecipeCard } from '@/components/RecipeCard'
+import { RecipeDetail } from '@/components/RecipeDetail'
+import { X } from '@phosphor-icons/react'
+import { loadRecipes } from '@/lib/recipes'
+import type { Recipe, RecipeCategory } from '@/lib/types'
+import { motion, AnimatePresence } from 'framer-motion'
 
-interface RecipeDetailProps {
-  recipe: Recipe | null
-  open: boolean
-  onOpenChange: (open: boolean) => void
-}
+export function RecipesPage() {
+  const [recipes, setRecipes] = useState<Recipe[]>([])
+  const [loading, setLoading] = useState(true)
+  const [selectedCategory, setSelectedCategory] = useState<RecipeCategory | 'All'>('All')
+  const [selectedRating, setSelectedRating] = useState<string>('all')
+  const [selectedDifficulty, setSelectedDifficulty] = useState<string>('all')
+  const [selectedPortions, setSelectedPortions] = useState<string>('all')
+  const [selectedRecipe, setSelectedRecipe] = useState<Recipe | null>(null)
+  const [detailOpen, setDetailOpen] = useState(false)
 
-export function RecipeDetail({ recipe, open, onOpenChange }: RecipeDetailProps) {
-  const isMobile = useIsMobile()
+  useEffect(() => {
+    loadRecipes().then(loadedRecipes => {
+      setRecipes(loadedRecipes)
+      setLoading(false)
+    })
+  }, [])
 
-  if (!recipe) return null
+  const filteredRecipes = recipes.filter(recipe => {
+    if (selectedCategory !== 'All' && recipe.category !== selectedCategory) return false
+    if (selectedRating !== 'all' && recipe.rating !== parseInt(selectedRating)) return false
+    if (selectedDifficulty !== 'all' && recipe.difficulty !== selectedDifficulty) return false
+    if (selectedPortions !== 'all' && recipe.portions !== parseInt(selectedPortions)) return false
+    return true
+  })
 
-  const categoryColors: Record<string, string> = {
-    Chicken: 'bg-accent text-accent-foreground',
-    'Ground Beef': 'bg-terracotta text-white',
-    Steak: 'bg-primary text-primary-foreground',
-    Other: 'bg-secondary text-secondary-foreground'
+  const hasActiveFilters = selectedRating !== 'all' || selectedDifficulty !== 'all' || selectedPortions !== 'all'
+
+  const clearFilters = () => {
+    setSelectedRating('all')
+    setSelectedDifficulty('all')
+    setSelectedPortions('all')
   }
 
-  const difficultyColors: Record<string, string> = {
-    Easy: 'bg-secondary text-secondary-foreground',
-    Medium: 'bg-accent/20 text-accent-foreground border border-accent',
-    Hard: 'bg-destructive/20 text-destructive border border-destructive'
+  const handleRecipeClick = (recipe: Recipe) => {
+    setSelectedRecipe(recipe)
+    setDetailOpen(true)
   }
 
-  const content = (
-    <>
-      <div className="space-y-4 pb-4">
-        <div className="flex flex-wrap items-center gap-2">
-          <Badge className={cn('rounded-md px-2 py-1 text-xs font-medium uppercase tracking-wider', categoryColors[recipe.category])}>
-            {recipe.category}
-          </Badge>
-          <div className="flex items-center gap-1 text-accent">
-            {Array.from({ length: 5 }).map((_, i) => (
-              <Star 
-                key={i} 
-                className={cn('h-5 w-5', i < recipe.rating ? 'fill-current' : 'opacity-30')}
-                weight={i < recipe.rating ? 'fill' : 'regular'}
-              />
-            ))}
-          </div>
-        </div>
-
-        <div className="flex flex-wrap gap-3 text-sm text-muted-foreground">
-          <div className="flex items-center gap-1.5">
-            <ChartBar className="h-5 w-5" />
-            <Badge variant="outline" className={cn('font-normal', difficultyColors[recipe.difficulty])}>
-              {recipe.difficulty}
-            </Badge>
-          </div>
-          <div className="flex items-center gap-1.5">
-            <Users className="h-5 w-5" />
-            <span>{recipe.portions} {recipe.portions === 1 ? 'portion' : 'portions'}</span>
-          </div>
-          {(recipe.prepTime || recipe.cookTime) && (
-            <div className="flex items-center gap-1.5">
-              <Clock className="h-5 w-5" />
-              <span>
-                {recipe.prepTime && recipe.cookTime 
-                  ? `${recipe.prepTime} + ${recipe.cookTime}`
-                  : recipe.prepTime || recipe.cookTime}
-              </span>
-            </div>
-          )}
-        </div>
-
-        {(recipe.calories || recipe.protein) && (
-          <div className="flex gap-6 p-4 bg-muted/50 rounded-lg border">
-            {recipe.calories && (
-              <div>
-                <div className="text-2xl font-bold text-foreground">{recipe.calories}</div>
-                <div className="text-sm text-muted-foreground">Calories</div>
-              </div>
-            )}
-            {recipe.protein && (
-              <div>
-                <div className="text-2xl font-bold text-foreground">{recipe.protein}</div>
-                <div className="text-sm text-muted-foreground">Protein</div>
-              </div>
-            )}
-          </div>
-        )}
-      </div>
-
-      <ScrollArea className="flex-1 pr-4">
-        <div 
-          className="prose prose-sm max-w-none prose-headings:font-space prose-headings:text-foreground prose-p:text-foreground/90 prose-li:text-foreground/90 prose-strong:text-foreground"
-          dangerouslySetInnerHTML={{ __html: recipe.content }}
-        />
-      </ScrollArea>
-    </>
-  )
-
-  if (isMobile) {
-    return (
-      <Sheet open={open} onOpenChange={onOpenChange}>
-        <SheetContent side="bottom" className="h-[90vh] flex flex-col">
-          <SheetHeader>
-            <SheetTitle className="text-2xl font-bold">{recipe.title}</SheetTitle>
-          </SheetHeader>
-          {content}
-        </SheetContent>
-      </Sheet>
-    )
-  }
+  const uniquePortions = Array.from(new Set(recipes.map(r => r.portions))).sort((a, b) => a - b)
 
   return (
-    <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-3xl max-h-[85vh] flex flex-col">
-        <DialogHeader>
-          <DialogTitle className="text-3xl font-bold">{recipe.title}</DialogTitle>
-        </DialogHeader>
-        {content}
-      </DialogContent>
-    </Dialog>
+    <div className="space-y-8">
+      <div className="mb-8">
+        <h2 className="text-2xl md:text-3xl font-bold mb-6">Browse by Category</h2>
+        <Tabs value={selectedCategory} onValueChange={(v) => setSelectedCategory(v as RecipeCategory | 'All')}>
+          <TabsList className="grid w-full grid-cols-2 md:grid-cols-5 h-auto gap-2 bg-muted/50 p-2">
+            <TabsTrigger value="All" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground font-medium">
+              All Recipes
+            </TabsTrigger>
+            <TabsTrigger value="Chicken" className="data-[state=active]:bg-accent data-[state=active]:text-accent-foreground font-medium">
+              Chicken
+            </TabsTrigger>
+            <TabsTrigger value="Ground Beef" className="data-[state=active]:bg-terracotta data-[state=active]:text-white font-medium">
+              Ground Beef
+            </TabsTrigger>
+            <TabsTrigger value="Steak" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground font-medium">
+              Steak
+            </TabsTrigger>
+            <TabsTrigger value="Other" className="data-[state=active]:bg-secondary data-[state=active]:text-secondary-foreground font-medium">
+              Other
+            </TabsTrigger>
+          </TabsList>
+        </Tabs>
+      </div>
+
+      <Separator className="my-8" />
+
+      <div className="mb-8">
+        <div className="flex items-center justify-between mb-4">
+          <h3 className="text-xl font-semibold">Filter Recipes</h3>
+          {hasActiveFilters && (
+            <Button 
+              variant="outline" 
+              size="sm" 
+              onClick={clearFilters}
+              className="gap-2"
+            >
+              <X className="h-4 w-4" />
+              Clear Filters
+            </Button>
+          )}
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="space-y-2">
+            <label className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">Rating</label>
+            <Select value={selectedRating} onValueChange={setSelectedRating}>
+              <SelectTrigger>
+                <SelectValue placeholder="Any rating" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all">Any rating</SelectItem>
+                <SelectItem value="5">5 stars</SelectItem>
+                <SelectItem value="4">4 stars</SelectItem>
+                <SelectItem value="3">3 stars</SelectItem>
+              </SelectContent>
+            </Select>
+          </div>
+          <div className="space-y-2">
+            <label className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">Difficulty</label>
+            <Select value={selectedDifficulty} onValueChange={setSelectedDifficulty}>
+              <SelectTrigger>
+                <SelectValue placeholder="Any difficulty" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all">Any difficulty</SelectItem>
+                <SelectItem value="Easy">Easy</SelectItem>
+                <SelectItem value="Medium">Medium</SelectItem>
+                <SelectItem value="Hard">Hard</SelectItem>
+              </SelectContent>
+            </Select>
+          </div>
+          <div className="space-y-2">
+            <label className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">Portions</label>
+            <Select value={selectedPortions} onValueChange={setSelectedPortions}>
+              <SelectTrigger>
+                <SelectValue placeholder="Any portions" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all">Any portions</SelectItem>
+                {uniquePortions.map(portions => (
+                  <SelectItem key={portions} value={portions.toString()}>
+                    {portions} {portions === 1 ? 'portion' : 'portions'}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+          </div>
+        </div>
+      </div>
+
+      <Separator className="my-8" />
+
+      {loading ? (
+        <div className="text-center py-12 text-muted-foreground">
+          Loading recipes...
+        </div>
+      ) : filteredRecipes.length === 0 ? (
+        <div className="text-center py-12">
+          <p className="text-xl text-muted-foreground mb-4">No recipes match your criteria</p>
+          {hasActiveFilters && (
+            <Button onClick={clearFilters} variant="outline">
+              Clear all filters
+            </Button>
+          )}
+        </div>
+      ) : (
+        <div>
+          <div className="mb-6">
+            <p className="text-muted-foreground">
+              Showing {filteredRecipes.length} {filteredRecipes.length === 1 ? 'recipe' : 'recipes'}
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <AnimatePresence mode="popLayout">
+              {filteredRecipes.map((recipe, index) => (
+                <motion.div
+                  key={recipe.slug}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, scale: 0.95 }}
+                  transition={{ duration: 0.3, delay: index * 0.05 }}
+                >
+                  <RecipeCard 
+                    recipe={recipe} 
+                    onClick={() => handleRecipeClick(recipe)}
+                  />
+                </motion.div>
+              ))}
+            </AnimatePresence>
+          </div>
+        </div>
+      )}
+
+      <RecipeDetail 
+        recipe={selectedRecipe}
+        open={detailOpen}
+        onOpenChange={setDetailOpen}
+      />
+    </div>
   )
 }
