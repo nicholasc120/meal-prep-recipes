@@ -62,10 +62,11 @@ export async function loadRecipes(): Promise<Recipe[]> {
   ]
 
   const recipes: Recipe[] = []
+  const baseUrl = import.meta.env.BASE_URL
 
   for (const filename of recipeFiles) {
     try {
-      const response = await fetch(`/recipes/${filename}`)
+      const response = await fetch(`${baseUrl}recipes/${filename}`)
       if (response.ok) {
         const content = await response.text()
         const slug = filename.replace('.md', '')
