@@ -1,6 +1,6 @@
 ---
 title: Red Lentil Ground Bison Pasta
-category: Beef
+category: Ground Beef
 rating: 5
 difficulty: Easy
 portions: 5
