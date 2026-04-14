@@ -6,6 +6,7 @@ difficulty: Easy
 portions: 6
 calories: 450 Cal
 protein: 45g
+original: true
 ---
 
 # Gyudon

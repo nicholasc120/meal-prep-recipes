@@ -6,6 +6,7 @@ difficulty: Easy
 portions: 4
 calories: 507
 protein: 44g
+original: true
 ---
 
 # Oyakodon

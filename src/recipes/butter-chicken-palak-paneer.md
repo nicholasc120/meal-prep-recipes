@@ -6,6 +6,7 @@ difficulty: Medium
 portions: 6
 calories: 539
 protein: 41g
+original: true
 ---
 
 # Butter Chicken and Palak Paneer

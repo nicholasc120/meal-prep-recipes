@@ -38,6 +38,11 @@ export function RecipeDetail({ recipe, open, onOpenChange }: RecipeDetailProps) 
           <Badge className={cn('rounded-md px-2 py-1 text-xs font-medium uppercase tracking-wider', categoryColors[recipe.category])}>
             {recipe.category}
           </Badge>
+          {recipe.original && (
+            <Badge variant="outline" className="rounded-md px-2 py-1 text-xs font-medium uppercase tracking-wider border-primary text-primary">
+              Original
+            </Badge>
+          )}
           <div className="flex items-center gap-1 text-accent">
             {Array.from({ length: 5 }).map((_, i) => (
               <Star 

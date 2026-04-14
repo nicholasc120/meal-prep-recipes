@@ -26,6 +26,8 @@ function parseFrontmatter(content: string): { frontmatter: Partial<RecipeFrontma
 
       if (cleanKey === 'rating' || cleanKey === 'portions' || cleanKey === 'calories') {
         frontmatter[cleanKey] = parseInt(value, 10) as any
+      } else if (cleanKey === 'original') {
+        frontmatter[cleanKey] = value.toLowerCase() === 'true'
       } else if (cleanKey === 'category' || cleanKey === 'difficulty' || cleanKey === 'title' || cleanKey === 'prepTime' || cleanKey === 'cookTime' || cleanKey === 'protein') {
         frontmatter[cleanKey] = value as any
       }
@@ -51,6 +53,7 @@ export async function parseRecipe(slug: string, rawContent: string): Promise<Rec
     cookTime: frontmatter.cookTime,
     calories: frontmatter.calories,
     protein: frontmatter.protein,
+    original: frontmatter.original,
     content: htmlContent,
     rawContent: body
   }

@@ -12,6 +12,7 @@ export interface Recipe {
   cookTime?: string
   calories?: number
   protein?: string
+  original?: boolean
   content: string
   rawContent: string
 }
@@ -26,6 +27,7 @@ export interface RecipeFrontmatter {
   cookTime?: string
   calories?: number
   protein?: string
+  original?: boolean
 }
 
 export interface Ingredient {

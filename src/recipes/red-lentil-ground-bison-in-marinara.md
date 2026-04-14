@@ -6,6 +6,7 @@ difficulty: Easy
 portions: 5
 calories: 576
 protein: 42g
+original: true
 ---
 
 # Red Lentil Ground Bison Pasta

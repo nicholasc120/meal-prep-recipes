@@ -6,6 +6,7 @@ difficulty: Easy
 portions: 7
 calories: 570
 protein: 42g
+original: true
 ---
 
 # Slow Cooker Chili
