@@ -29,13 +29,8 @@ export interface RecipeFrontmatter {
 }
 
 export interface Ingredient {
-  id: string
+  slug: string
   name: string
-  servingSize: string
-  calories: number
-  protein: number
-  carbs: number
-  fat: number
   store: string
   notes?: string
 }
