@@ -90,7 +90,12 @@ export function IngredientsPage() {
                       </button>
                     </div>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="space-y-2">
+                    {ingredient.macros && (
+                      <div className="text-sm font-medium bg-muted/50 rounded-md px-3 py-2 border">
+                        {ingredient.macros}
+                      </div>
+                    )}
                     {ingredient.notes && (
                       <p className="text-sm text-muted-foreground">{ingredient.notes}</p>
                     )}

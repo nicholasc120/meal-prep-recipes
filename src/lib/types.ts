@@ -33,5 +33,6 @@ export interface RecipeFrontmatter {
 export interface Ingredient {
   slug: string
   name: string
+  macros?: string
   notes?: string
 }
