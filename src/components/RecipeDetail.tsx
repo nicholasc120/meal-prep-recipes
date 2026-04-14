@@ -90,9 +90,9 @@ export function RecipeDetail({ recipe, open, onOpenChange }: RecipeDetailProps) 
         )}
       </div>
 
-      <ScrollArea className="flex-1 pr-4">
+      <ScrollArea className="flex-1 min-h-0">
         <div 
-          className="prose prose-sm max-w-none prose-headings:font-space prose-headings:text-foreground prose-p:text-foreground/90 prose-li:text-foreground/90 prose-strong:text-foreground"
+          className="recipe-content pr-4 pb-6"
           dangerouslySetInnerHTML={{ __html: recipe.content }}
         />
       </ScrollArea>
@@ -102,11 +102,13 @@ export function RecipeDetail({ recipe, open, onOpenChange }: RecipeDetailProps) 
   if (isMobile) {
     return (
       <Sheet open={open} onOpenChange={onOpenChange}>
-        <SheetContent side="bottom" className="h-[90vh] flex flex-col">
+        <SheetContent side="bottom" className="h-[90vh] flex flex-col overflow-hidden">
           <SheetHeader>
             <SheetTitle className="text-2xl font-bold">{recipe.title}</SheetTitle>
           </SheetHeader>
-          {content}
+          <div className="flex-1 flex flex-col min-h-0 overflow-y-auto">
+            {content}
+          </div>
         </SheetContent>
       </Sheet>
     )

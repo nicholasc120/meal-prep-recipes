@@ -123,3 +123,83 @@
     font-family: var(--font-space);
   }
 }
+
+/* Styles for rendered recipe markdown content */
+.recipe-content {
+  line-height: 1.7;
+  color: var(--foreground);
+}
+
+.recipe-content h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--foreground);
+}
+
+.recipe-content h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 1.75rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.375rem;
+  border-bottom: 1px solid var(--border);
+  color: var(--foreground);
+}
+
+.recipe-content h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--foreground);
+}
+
+.recipe-content p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--muted-foreground);
+}
+
+.recipe-content a {
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-weight: 500;
+  word-break: break-all;
+  transition: opacity 0.15s;
+}
+
+.recipe-content a:hover {
+  opacity: 0.75;
+}
+
+.recipe-content ul, .recipe-content ol {
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+  padding-left: 1.5rem;
+}
+
+.recipe-content ul {
+  list-style-type: disc;
+}
+
+.recipe-content ol {
+  list-style-type: decimal;
+}
+
+.recipe-content li {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  color: var(--muted-foreground);
+}
+
+.recipe-content li::marker {
+  color: var(--primary);
+}
+
+.recipe-content strong {
+  font-weight: 600;
+  color: var(--foreground);
+}
