@@ -33,6 +33,5 @@ export interface RecipeFrontmatter {
 export interface Ingredient {
   slug: string
   name: string
-  store: string
   notes?: string
 }

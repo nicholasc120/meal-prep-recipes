@@ -1,8 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Badge } from '@/components/ui/badge'
 import { Input } from '@/components/ui/input'
-import { ShoppingCart, Link as LinkIcon } from '@phosphor-icons/react'
+import { Link as LinkIcon } from '@phosphor-icons/react'
 import { loadIngredients } from '@/lib/ingredients'
 import type { Ingredient } from '@/lib/types'
 import { motion, AnimatePresence } from 'framer-motion'
@@ -39,8 +38,7 @@ export function IngredientsPage() {
   }
 
   const filteredIngredients = ingredients.filter(ing =>
-    ing.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    ing.store.toLowerCase().includes(searchTerm.toLowerCase())
+    ing.name.toLowerCase().includes(searchTerm.toLowerCase())
   )
 
   return (
@@ -92,11 +90,7 @@ export function IngredientsPage() {
                       </button>
                     </div>
                   </CardHeader>
-                  <CardContent className="space-y-3">
-                    <Badge variant="secondary" className="gap-1.5">
-                      <ShoppingCart className="h-3 w-3" />
-                      {ingredient.store}
-                    </Badge>
+                  <CardContent>
                     {ingredient.notes && (
                       <p className="text-sm text-muted-foreground">{ingredient.notes}</p>
                     )}

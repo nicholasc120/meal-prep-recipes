@@ -13,20 +13,16 @@ export function loadIngredients(): Ingredient[] {
   for (const section of sections) {
     const lines = section.trim().split('\n')
     const name = lines[0].trim()
-    let store = ''
     let notes: string | undefined
 
     for (const line of lines.slice(1)) {
-      const storeMatch = line.match(/\*\*Store\*\*:\s*(.+)/)
       const notesMatch = line.match(/\*\*Notes\*\*:\s*(.+)/)
-      if (storeMatch) store = storeMatch[1].trim()
       if (notesMatch) notes = notesMatch[1].trim()
     }
 
     ingredients.push({
       slug: slugify(name),
       name,
-      store,
       notes,
     })
   }
