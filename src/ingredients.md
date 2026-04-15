@@ -32,7 +32,7 @@
 
 ## Thinly Sliced Strip Loin
 - **Macros**: 1600 Cal, 250gP per 2.5lbs
-- **Notes**: Costco will sell these but only sometimes. I'm not sure how i got the macros for this so it might be inaccurate
+- **Notes**: Costco will sell these but only sometimes. I follow https://cheatdaydesign.com/steak-nutrition-guide/ for steak macros
 
 ## Eggs
 - **Macros**: 80 Cal, 6.5gP per egg
