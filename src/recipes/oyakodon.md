@@ -16,13 +16,14 @@ https://www.justonecookbook.com/oyakodon/#recipe
 4 Servings - 507 Cal, 44gP
 
 ## Ingredients
-- 1 onion (4 oz, 113 g; peeled)
-- 2 chicken breast (250g), (300 Cal, 56gP)
-- 8 large eggs (320 Cal, 26gP)
+- 1 onion
+- 2 chicken breast (250g), (600 Cal, 112gP)
+- 8 large eggs (320 Cal, 104gP)
+
 For the Seasonings:
 - 1 cup dashi (Japanese soup stock) (use standard Awase Dashi, dashi packet or powder, or Vegan Dashi)
-- 4 Tbsp soy sauce (18 Cal)
-- 4 Tbsp mirin (45 Cal)
-- 4 tsp sugar (32 Cal)
+- 4 Tbsp soy sauce (36 Cal)
+- 4 Tbsp mirin (90 Cal)
+- 4 tsp sugar (64 Cal)
 
 - 180g uncooked sushi rice (600 Cal, 12gP)
