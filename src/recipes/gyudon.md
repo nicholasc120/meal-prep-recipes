@@ -17,7 +17,8 @@ https://thewoksoflife.com/gyudon-recipe-beef-rice/#recipe
 450 Cal, 45gP
 
 ## Ingredients
-- 1.138kg Thinly Sliced Strip Loin (1600 Cal, 250gP)
+- 1.138kg Thinly Sliced Strip Loin (1600 Cal, 250gP) or 3lbs top sirloin (1350 Cal, 234gP (totals to 415 Cal, 42gP with 6 servings))
+
 - 45g uncooked sushi rice (960 Cal, 18gP)
 - 3 onions
 - 5 tsp sugar (80 Cal)
