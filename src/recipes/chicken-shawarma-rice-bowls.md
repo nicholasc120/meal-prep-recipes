@@ -31,8 +31,8 @@ Chicken Shawarma
 - some unknown amount of tomato paste (maybe 1 tbsp?)
 - Juice of 3/4 Lemon
 
-* Oven bake or Air Fry for 20 mins at 200C/400F + Broil for 3-4 mins to give a good char
-* Once cooked, let it rest 4-5mins then chop into cubes - use all the flavorful juices left in the pan!
+- Oven bake or Air Fry for 20 mins at 200C/400F + Broil for 3-4 mins to give a good char
+- Once cooked, let it rest 4-5mins then chop into cubes - use all the flavorful juices left in the pan!
 
 Fragrant Golden Yellow Rice
 - 20g Reduced Fat Butter
@@ -44,8 +44,8 @@ Fragrant Golden Yellow Rice
 - 250g Uncooked Basmati Rice
 - 600g Water
 
-* Cook garlic and onion on medium low heat for 5-6 mins till softened and fragrant, then add spices and uncooked rice. Toast for 2-3 mins before adding water
-* Bring to a light bubble then cover with a lid, simmer for 10-12 mins or until fully cooked. Check halfway to mix, prevents sticking
+- Cook garlic and onion on medium low heat for 5-6 mins till softened and fragrant, then add spices and uncooked rice. Toast for 2-3 mins before adding water
+- Bring to a light bubble then cover with a lid, simmer for 10-12 mins or until fully cooked. Check halfway to mix, prevents sticking
 
 Special Garlic White Sauce (big batch, store in bottle)
 - 150g Fat Free Yogurt

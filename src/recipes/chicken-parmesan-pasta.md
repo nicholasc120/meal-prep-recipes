@@ -25,9 +25,9 @@ Per serving (makes 10)
 - 1 tsp of black pepper, onion powder, chili flakes
 - 15g parmigiano reggiano (65 Cal, 6gP)
 
-High: 2-3 hours
-OR
-Low: 3-4 hours
+- High: 2-3 hours
+- OR
+- Low: 3-4 hours
 
 - 672g pasta, cooked to 50% (2370 Cal, 85gP) (Aka, cook for half the time shown on the box)
 
@@ -37,7 +37,7 @@ Low: 3-4 hours
 - 150g parmigiano reggiano (650 Cal, 60gP)
 - Salt & pepper to taste
 
-Top with chopped basil
+- Top with chopped basil
 
 ## Instructions
 - To the slow cooker, add diced chicken breast, peeled/crushed tomatoes, tomato paste, minced garlic, salt, italian seasoning, spices, and fresh-grated parmesan. Let cook for specified instructions
@@ -47,7 +47,7 @@ Top with chopped basil
 - mix and cover for 15 minutes
 - top with chopped basil
 
-Notes:
+## Notes
 - For accurate “serving sizes” - weigh your empty slow cooker BEFORE starting anything. Once everything is done, weigh it again, and subtract out the “before” weight - this will give you the total weight of the finished recipe. Divide this by the # of servings (10 in this case) to get the exact serving size weight
 - Store everything frozen - no need to thaw, just toss in the microwave with 2-3 tablespoons of milk or water, cover with a paper towel, and microwave for 3-5 mins until heated through. Add more liquid to reconstitute the sauce/increase creaminess
 - Make sure to blend the cottage cheese for 2-3 mins to ensure it’s completely smooth all the way through - heating up slightly in the microwave can help with the process

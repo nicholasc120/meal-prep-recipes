@@ -34,7 +34,7 @@ Macros Per Serving:
 - 1 Small Bag of Spinach (200g)
 - 3 Tbsps Lemon Juice (45g) 
 
-Additional Notes: To reheat the meal preps from frozen, follow these steps: Add a few tablespoon of water to the container, cover with a wet paper towel, and microwave for around 5-6 minutes
+- Additional Notes: To reheat the meal preps from frozen, follow these steps: Add a few tablespoon of water to the container, cover with a wet paper towel, and microwave for around 5-6 minutes
 
 
 # Instruction
