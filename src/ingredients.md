@@ -35,7 +35,7 @@
 - **Notes**: Costco will sell these but only sometimes. I'm not sure how i got the macros for this so it might be inaccurate
 
 ## Eggs
-- **Macros**: 80 Cal, 13gP per egg
+- **Macros**: 80 Cal, 6.5gP per egg
 - **Notes**: it's an egg.
 
 ## Cheese

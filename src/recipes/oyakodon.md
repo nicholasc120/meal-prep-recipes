@@ -18,7 +18,7 @@ https://www.justonecookbook.com/oyakodon/#recipe
 ## Ingredients
 - 1 onion
 - 2 chicken breast (250g), (600 Cal, 112gP)
-- 8 large eggs (320 Cal, 104gP)
+- 8 large eggs (320 Cal, 52gP)
 
 For the Seasonings:
 - 1 cup dashi (Japanese soup stock) (use standard Awase Dashi, dashi packet or powder, or Vegan Dashi)
