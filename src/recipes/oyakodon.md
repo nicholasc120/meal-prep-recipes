@@ -13,7 +13,7 @@ original: true
 https://www.justonecookbook.com/oyakodon/#recipe
 
 ## Macros
-4 Servings - 507 Cal, 44gP
+4 Servings - 427 Cal, 44gP
 
 ## Ingredients
 - 1 onion
