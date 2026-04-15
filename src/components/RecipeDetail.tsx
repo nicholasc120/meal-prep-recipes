@@ -1,6 +1,6 @@
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog'
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from '@/components/ui/sheet'
-import { ScrollArea } from '@/components/ui/scroll-area'
+
 import { Badge } from '@/components/ui/badge'
 import { useIsMobile } from '@/hooks/use-mobile'
 import { Star, ChartBar, Users, Clock } from '@phosphor-icons/react'
@@ -95,25 +95,21 @@ export function RecipeDetail({ recipe, open, onOpenChange }: RecipeDetailProps) 
         )}
       </div>
 
-      <ScrollArea className="flex-1 min-h-0">
-        <div 
-          className="recipe-content pr-4 pb-6"
-          dangerouslySetInnerHTML={{ __html: recipe.content }}
-        />
-      </ScrollArea>
+      <div 
+        className="recipe-content pb-6"
+        dangerouslySetInnerHTML={{ __html: recipe.content }}
+      />
     </>
   )
 
   if (isMobile) {
     return (
       <Sheet open={open} onOpenChange={onOpenChange}>
-        <SheetContent side="bottom" className="h-[90vh] flex flex-col overflow-hidden">
+        <SheetContent side="bottom" className="h-[90vh] overflow-y-auto">
           <SheetHeader>
             <SheetTitle className="text-2xl font-bold">{recipe.title}</SheetTitle>
           </SheetHeader>
-          <div className="flex-1 flex flex-col min-h-0 overflow-y-auto">
-            {content}
-          </div>
+          {content}
         </SheetContent>
       </Sheet>
     )
@@ -121,7 +117,7 @@ export function RecipeDetail({ recipe, open, onOpenChange }: RecipeDetailProps) 
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-3xl max-h-[85vh] flex flex-col">
+      <DialogContent className="max-w-3xl max-h-[85vh] overflow-y-auto">
         <DialogHeader>
           <DialogTitle className="text-3xl font-bold">{recipe.title}</DialogTitle>
         </DialogHeader>
