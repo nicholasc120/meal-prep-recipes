@@ -28,6 +28,7 @@ https://natashaskitchen.com/meatloaf-recipe/
 - 1 tsp salt, or to taste
 - 1 tsp Italian seasoning
 - 1/2 tsp ground black pepper
+- 90g of Parmesan (390 Cal, 36gP)
 
 ## Meatloaf Sauce Ingredients (265 Cal):
 - 3/4 cup ketchup (175 Cal)
@@ -35,8 +36,6 @@ https://natashaskitchen.com/meatloaf-recipe/
 - 2 Tbsp brown sugar (90 Cal)
 - 1/2 tsp garlic powder
 - 1/2 tsp onion powder
-
-can add 90g of Parmesan for a total of 2544 Cal, 229gP total, or 508 Cal, 46gP for 5 servings
 
 
 ## 1/2 serving of Risotto (946 Cal, 20gP)
