@@ -21,7 +21,7 @@ Servings: 5 bowls
 Prep time: 5 minutes
 Cook time: 25 minutes
 
-# Ingredients (5 servings) ⬇️
+## Ingredients (5 servings) ⬇️
 - 1 tsp olive oil (40 cal)
 - 1.5 lb lean ground beef (1088 cal, 136 gp)
 - 2 garlic cloves
@@ -36,7 +36,7 @@ Cook time: 25 minutes
 - 300g macaroni (1058 cal, 38gp)
 - 56g cheddar cheese (230 cal, 13gp)
 
-# Instructions
+## Instructions
 - cook beef over medium heat with 1 tsp olive oil
 - once beef is partially browned, add seasonings and garlic and mix
 - mix in beef broth, fat free milk, marinara until boiling

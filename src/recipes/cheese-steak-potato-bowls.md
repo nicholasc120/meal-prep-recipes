@@ -14,20 +14,20 @@ https://www.instagram.com/p/DDAOMp-PS2a/
 
 ## Ingredients
 
-* 4 medium russet potatoes
-* 1 tablespoon olive oil
-* Salt, to taste
-* Pepper, to taste
-* 1 teaspoon garlic powder
-* 1 teaspoon paprika
-* 32oz sirloin steak, thinly sliced
-* 1 white onion, thinly sliced
-* 8 jalapeños, thinly sliced
-* 120g reduced-fat mozzarella, shredded
-* 120g reduced-fat cheddar, shredded
-* Salt, to taste
-* Pepper, to taste
-* 1 tablespoon olive oil
+- 4 medium russet potatoes
+- 1 tablespoon olive oil
+- Salt, to taste
+- Pepper, to taste
+- 1 teaspoon garlic powder
+- 1 teaspoon paprika
+- 32oz sirloin steak, thinly sliced
+- 1 white onion, thinly sliced
+- 8 jalapeños, thinly sliced
+- 120g reduced-fat mozzarella, shredded
+- 120g reduced-fat cheddar, shredded
+- Salt, to taste
+- Pepper, to taste
+- 1 tablespoon olive oil
 
 ## Directions:
 
@@ -38,5 +38,4 @@ https://www.instagram.com/p/DDAOMp-PS2a/
 - Sauté Veggies: Heat 1 tbsp olive oil in a skillet. Cook sliced onions and jalapeños until translucent.
 - Cook Steak: Add sliced sirloin to skillet with onions and jalapeños. Season with salt and pepper. Cook 5-7 minutes until done.
 - Shred Cheese: Grate 120g reduced-fat mozzarella and cheddar.
-- Assemble: Layer air-fried potatoes, steak mixture, and cheese in containers. Serve with chipotle sauce.
-- 
+- Assemble: Layer air-fried potatoes, steak mixture, and cheese in containers. Serve with chipotle sauce. 

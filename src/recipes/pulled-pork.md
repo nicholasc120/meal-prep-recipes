@@ -30,8 +30,8 @@ https://www.allrecipes.com/recipe/92462/slow-cooker-texas-pulled-pork/
 - 2 large cloves garlic, crushed
 - 1 ½ teaspoons dried thyme
 
-8 hamburger buns, split (dempsters - 130 Cal, 4gP)
-2 tablespoons butter, or as needed
+- 8 hamburger buns, split (dempsters - 130 Cal, 4gP)
+- 2 tablespoons butter, or as needed
 
 ## Notes
 if you freeze it with the buns, you need to defrost it a day in advance. After defrosting, I warm the buns in the air fryer and then put the defrosted coleslaw inbetween the buns and the pulled pork but i think i forgot to write down what ingredients are in the coleslaw
