@@ -1,5 +1,5 @@
 ## Chicken Breast
-- **Macros**: 300 Cal, 56gP per Breast
+- **Macros**: 300 Cal, 56gP per Breast/250g
 - **Notes**: I get these in bulk from Costco
 
 ## Ground Beef
