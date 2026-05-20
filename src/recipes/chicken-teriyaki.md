@@ -17,7 +17,7 @@ https://www.justonecookbook.com/chicken-teriyaki/#recipe
 ## Ingredients
 
 ### For the Chicken
-- 3 Chicken Breasts (900 Cal, 168gP)
+- 3 Chicken Breasts (900 Cal, 168gP) (butterfly these and score horizontally)
 - 1/4 tsp Diamond Crystal kosher salt
 - 1/4 tsp freshly ground black pepper
 - 1.5 Tbsp neutral oil (180 Cal)
