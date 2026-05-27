@@ -16,7 +16,7 @@ https://natashaskitchen.com/meatloaf-recipe/
 6 servings - 580 Cal, 42gP
 
 ## Ingredients (1889 Cal, 193gP)
-- 2 lbs ground bison, 85% or 80% lean (1452 Cal, 180gP)
+- 2 lbs ground beef (1452 Cal, 180gP)
 - 1 med onion, (1 cup), finely chopped
 - 1 tsp olive oil (40 Cal)
 - 2 large eggs (160 Cal, 13gP)
