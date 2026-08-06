@@ -1,5 +1,5 @@
 ---
-title: Grilled Chipotle Chicken Pasta in Rosee Sauce
+title: Grilled Chipotle Chicken Pasta in Spicy Sauce
 category: Chicken
 rating: 5
 difficulty: Easy
@@ -8,7 +8,7 @@ calories: 575
 protein: 43g
 original: true
 ---
-# Grilled Chipotle Chicken Pasta in Rosee Sauce
+# Grilled Chipotle Chicken Pasta in Spicy Sauce
 
 ## Ingredients
 
