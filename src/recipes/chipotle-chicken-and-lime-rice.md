@@ -22,7 +22,7 @@ https://www.allrecipes.com/recipe/146000/lime-cilantro-rice/
 - 4 tsp salt
 - 4 tbsp butter (408 Cal)
 - 2 cups chopped cilantro
-- 8 tbsp fresh lime juice
+- 8 tbsp fresh lime juice (~4-5 limes)
 - 4 tbsp Lime zest
 
 ## Instructions
