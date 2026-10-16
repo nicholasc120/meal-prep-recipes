@@ -23,7 +23,7 @@ https://www.allrecipes.com/recipe/146000/lime-cilantro-rice/
 - 4 tbsp butter (408 Cal)
 - 2 cups chopped cilantro
 - 8 tbsp fresh lime juice (~4-5 limes)
-- 4 tbsp Lime zest
+- 4 tsp Lime zest
 
 ## Instructions
 - bring water and salt to a boil in a small saucepan. Stir in rice and butter. Reduce heat to low, cover, and simmer until rice is tender, about 20 minutes.
