@@ -3,9 +3,9 @@ title: Beef Bulgogi
 category: Steak
 rating: 5
 difficulty: Medium
-portions: 5
-calories: 580
-protein: 40g
+portions: 6
+calories: 447
+protein: 44g
 original: true
 ---
 # Beef bulgogi
