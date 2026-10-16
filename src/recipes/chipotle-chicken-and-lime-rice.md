@@ -13,7 +13,7 @@ original: true
 ## Ingredients 
 
 ### Chicken
-- 1kg bag Costco Chipotle Chicken (1333 Cal, 216gP)
+- 1kg bag Costco Chipotle Chicken (442 Cal, 216gP)
 
 ### Rice
 https://www.allrecipes.com/recipe/146000/lime-cilantro-rice/
