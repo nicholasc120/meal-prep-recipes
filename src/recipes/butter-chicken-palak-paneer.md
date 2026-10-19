@@ -4,7 +4,7 @@ category: Chicken
 rating: 5
 difficulty: Medium
 portions: 6
-calories: 539
+calories: 580
 protein: 41g
 original: true
 ---
@@ -13,7 +13,7 @@ original: true
 
 http://cookwithmanali.com/palak-paneer/#wprm-recipe-container-36315
 
-6 servings - 539 Cal,41gP
+6 servings - 580 Cal,41gP
 ## palak paneer
 - 225g Paneer - 700 Cal, 53gP
 - 1 tbsp oil - 120 Cal
@@ -24,4 +24,4 @@ http://cookwithmanali.com/palak-paneer/#wprm-recipe-container-36315
 - 3 Chicken Breasts, 900 Cal, 168gP
 
 ## Rice
-- 225g uncooked rice - 800 Cal, 15gP
+- 270g uncooked rice (960 Cal, 18gP)

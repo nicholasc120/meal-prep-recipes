@@ -4,7 +4,7 @@ category: Chicken
 rating: 5
 difficulty: Easy
 portions: 5
-calories: 442
+calories: 452
 protein: 46g
 original: true
 ---
@@ -17,7 +17,7 @@ original: true
 
 ### Rice
 https://www.allrecipes.com/recipe/146000/lime-cilantro-rice/
-- 225g Uncooked Rice (750 Cal, 15gP)
+- 225g Uncooked Rice (800 Cal, 15gP)
 - 2.5 Cups water
 - 1.25 tsp salt
 - 1.25 tbsp butter (128 Cal)

@@ -4,7 +4,7 @@ category: Chicken
 rating: 5
 difficulty: Easy
 portions: 4
-calories: 507
+calories: 517
 protein: 44g
 original: true
 ---
@@ -13,7 +13,7 @@ original: true
 https://www.justonecookbook.com/oyakodon/#recipe
 
 ## Macros
-4 Servings - 507 Cal, 44gP
+4 Servings - 517 Cal, 44gP
 
 ## Ingredients
 - 1 onion
@@ -26,4 +26,4 @@ For the Seasonings:
 - 4 Tbsp mirin (90 Cal)
 - 4 tsp sugar (64 Cal)
 
-- 180g uncooked sushi rice (600 Cal, 12gP)
+- 180g uncooked sushi rice (640 Cal, 12gP)

@@ -11,7 +11,7 @@
 - **Notes**: These are sold in 3 individual 1lbs packs at Costco. With only 10% fat, the macros are close enough to extra lean ground beef that I substitute it for this most of the time.
 
 ## Rice
-- **Macros**: 150 Cal, 3gP per 45g
+- **Macros**: 160 Cal, 3gP per 45g
 - **Notes**: I use short-grain sushi rice for most Japanese recipes, and use long-grain, basmati rice for everything else. The macros are the same
 
 ## Red Lentil Pasta

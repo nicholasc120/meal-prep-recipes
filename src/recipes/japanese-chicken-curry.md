@@ -4,7 +4,7 @@ category: Chicken
 rating: 5
 difficulty: Easy
 portions: 4
-calories: 564
+calories: 574
 protein: 47
 original: true
 ---
@@ -19,7 +19,7 @@ https://www.sbfoods-worldwide.com/recipes/010.html
 - 2 Carrots, or 1 large one
 - 140g yukon gold potatoes (95 Cal, 2gP)
 - 1 Tbsp vegetable oil (124 Cal)
-- 180g Uncooked Rice (600 Cal, 12gP)
+- 180g Uncooked Rice (640 Cal, 12gP)
 
 ## Instructions
 
