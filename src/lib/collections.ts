@@ -12,9 +12,9 @@ export interface CollectionEntry {
 }
 
 export const COLLECTIONS: { id: CollectionId; label: string; heading: string; blurb: string }[] = [
-  { id: 'breakfast', label: 'Breakfast', heading: 'Breakfast', blurb: 'Recipes I use for breakfast.' },
-  { id: 'vegetables', label: 'Vegetables', heading: 'Vegetables', blurb: 'The vegetables I use and how I cook them.' },
-  { id: 'other', label: 'Other', heading: 'Other', blurb: 'Regular recipes I like to cook.' },
+  { id: 'breakfast', label: 'Breakfast', heading: 'Breakfast', blurb: 'Recipes I use for breakfast. I look for <300 Cal and at least 17gP' },
+  { id: 'vegetables', label: 'Vegetables', heading: 'Vegetables', blurb: 'I hate vegetables but fiber is important i guess' },
+  { id: 'other', label: 'Other', heading: 'Other', blurb: 'Other recipes that i often forget and are here for reference' },
 ]
 
 // Add a .md file to the matching folder under src/collections/ to add an entry.
