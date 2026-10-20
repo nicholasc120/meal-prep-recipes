@@ -46,7 +46,7 @@ export async function parseRecipe(slug: string, rawContent: string): Promise<Rec
     slug,
     title: frontmatter.title || 'Untitled Recipe',
     category: (frontmatter.category as RecipeCategory) || 'Other',
-    rating: frontmatter.rating || 3,
+    rating: frontmatter.rating,
     difficulty: (frontmatter.difficulty as RecipeDifficulty) || 'Medium',
     portions: frontmatter.portions || 1,
     prepTime: frontmatter.prepTime,

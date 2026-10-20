@@ -43,15 +43,17 @@ export function RecipeDetail({ recipe, open, onOpenChange }: RecipeDetailProps) 
               Original
             </Badge>
           )}
-          <div className="flex items-center gap-1 text-accent">
-            {Array.from({ length: 5 }).map((_, i) => (
-              <Star 
-                key={i} 
-                className={cn('h-5 w-5', i < recipe.rating ? 'fill-current' : 'opacity-30')}
-                weight={i < recipe.rating ? 'fill' : 'regular'}
-              />
-            ))}
-          </div>
+          {recipe.rating !== undefined && (
+            <div className="flex items-center gap-1 text-accent">
+              {Array.from({ length: 5 }).map((_, i) => (
+                <Star 
+                  key={i} 
+                  className={cn('h-5 w-5', i < recipe.rating ? 'fill-current' : 'opacity-30')}
+                  weight={i < recipe.rating ? 'fill' : 'regular'}
+                />
+              ))}
+            </div>
+          )}
         </div>
 
         <div className="flex flex-wrap gap-3 text-sm text-muted-foreground">

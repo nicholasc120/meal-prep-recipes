@@ -40,15 +40,17 @@ export function RecipeCard({ recipe, onClick }: RecipeCardProps) {
               </Badge>
             )}
           </div>
-          <div className="flex items-center gap-1 text-accent">
-            {Array.from({ length: 5 }).map((_, i) => (
-              <Star 
-                key={i} 
-                className={cn('h-4 w-4', i < recipe.rating ? 'fill-current' : 'opacity-30')}
-                weight={i < recipe.rating ? 'fill' : 'regular'}
-              />
-            ))}
-          </div>
+          {recipe.rating !== undefined && (
+            <div className="flex items-center gap-1 text-accent">
+              {Array.from({ length: 5 }).map((_, i) => (
+                <Star 
+                  key={i} 
+                  className={cn('h-4 w-4', i < recipe.rating ? 'fill-current' : 'opacity-30')}
+                  weight={i < recipe.rating ? 'fill' : 'regular'}
+                />
+              ))}
+            </div>
+          )}
         </div>
         <CardTitle className="text-xl leading-tight group-hover:text-primary transition-colors">
           {recipe.title}

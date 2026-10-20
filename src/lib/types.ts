@@ -5,7 +5,7 @@ export interface Recipe {
   slug: string
   title: string
   category: RecipeCategory
-  rating: number
+  rating?: number
   difficulty: RecipeDifficulty
   portions: number
   prepTime?: string
@@ -20,7 +20,7 @@ export interface Recipe {
 export interface RecipeFrontmatter {
   title: string
   category: RecipeCategory
-  rating: number
+  rating?: number
   difficulty: RecipeDifficulty
   portions: number
   prepTime?: string

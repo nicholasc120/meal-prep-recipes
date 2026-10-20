@@ -35,6 +35,29 @@ protein: 45g
 1. Add your instructions here
 ```
 
+## Other Sections (Breakfast, Vegetables, Other)
+
+These pages are separate from the meal prep recipes. They're linked from the footer and from each other's nav bar. Add a markdown file to the matching folder to add an entry:
+
+- `src/collections/breakfast/`
+- `src/collections/vegetables/`
+- `src/collections/other/`
+
+```markdown
+---
+title: Entry Name
+description: Optional one-line summary shown on the card
+calories: 250 Cal   # optional, shown on the card and entry
+protein: 20g        # optional
+---
+
+Any markdown content here.
+```
+
+The vegetables page also shows a flat list of the vegetables you use. Edit `src/collections/vegetables-list.md` (one `- item` per line). Cooking instructions are regular entries in `src/collections/vegetables/`.
+
+The `example-*.md` files are placeholders; replace or delete them.
+
 ## Deploying to GitHub Pages
 
 ### Step 1: Build the Site
