@@ -101,7 +101,7 @@ function App() {
       </div>
 
       <footer className="px-6 md:px-12 lg:px-24 py-8 border-t text-sm text-muted-foreground flex flex-wrap gap-x-6 gap-y-2">
-        <span>Recipes that aren't meal prep:</span>
+        <span>Recipes that are not meal prep:</span>
         {COLLECTIONS.map(c => (
           <a key={c.id} href={`#${c.id}`} className="underline hover:text-foreground">{c.label}</a>
         ))}
