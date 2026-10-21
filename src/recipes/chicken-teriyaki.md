@@ -1,7 +1,6 @@
 ---
 title: Chicken Teriyaki
 category: Chicken
-rating: 0
 difficulty: Medium
 portions: 4
 calories: 488

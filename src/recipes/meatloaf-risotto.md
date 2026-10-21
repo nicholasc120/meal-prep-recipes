@@ -1,7 +1,6 @@
 ---
 title: Meatloaf and Risotto
 category: Ground Beef
-rating: 0
 difficulty: Hard
 portions: 6
 calories: 580

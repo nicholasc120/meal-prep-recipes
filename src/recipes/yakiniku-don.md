@@ -1,7 +1,6 @@
 ---
 title: Yakiniku Don
 category: Steak
-rating: 5
 difficulty: Easy
 portions: 6
 calories: 491
