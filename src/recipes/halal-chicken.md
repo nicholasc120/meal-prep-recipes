@@ -1,7 +1,7 @@
 ---
 title: Halal Guys Chicken and Rice
 category: Chicken
-difficulty: Easy
+difficulty: Hard
 portions: 6
 calories: 576 Cal
 protein: 42g
@@ -11,6 +11,8 @@ https://www.joshuaweissman.com/recipes/halal-guys-chicken-over-rice-but-better-r
 
 ## Macros
 6 servings (576 Cal, 42-44gP)
+
+- this is more rice than i usually use and you could cut it down if Calorie count is too high
 
 ## Ingredients
 
